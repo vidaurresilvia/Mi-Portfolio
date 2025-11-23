@@ -1,23 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Silvia Vidaurre | Front End Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-
+        <nav>
+            <div class="logo">SV.</div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#tech">Tecnologías</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <h1>Holii</h1>
-        <h2>Que onda</h2>
-    </main>
-    <footer>
 
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hola, soy <span>Silvia Vidaurre</span></h1>
+                <h2>Desarrolladora Front End</h2>
+                <div class="social-links">
+                    <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:tuemail@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="#projects" class="btn">Ver Proyectos</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <i class="fas fa-user-circle fa-5x"></i>
+                </div>
+                <div class="about-text">
+                    <p>¡Hola! Soy una apasionada desarrolladora Front End con un ojo para el diseño y la usabilidad. Me
+                        encanta crear experiencias web modernas y responsivas que cautiven a los usuarios.</p>
+                    <p>Con experiencia en HTML, CSS y JavaScript, siempre estoy buscando aprender nuevas tecnologías y
+                        mejorar mis habilidades. Mi objetivo es construir interfaces limpias y eficientes.</p>
+                    <a href="#contact" class="btn">Contáctame</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section id="tech">
+            <h2 class="section-title">Tecnologías</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-sass"></i>
+                    <p>Sass</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Proyecto 1</h3>
+                        <p>Descripción breve del proyecto. Qué tecnologías se usaron y cuál fue el objetivo principal.
+                        </p>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción breve del proyecto. Qué tecnologías se usaron y cuál fue el objetivo principal.
+                        </p>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Proyecto 3</h3>
+                        <p>Descripción breve del proyecto. Qué tecnologías se usaron y cuál fue el objetivo principal.
+                        </p>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p class="contact-item"><i class="fas fa-envelope"></i> silviamargaritavidaurre@gmail.com</p>
+                    <p class="contact-item"><i class="fab fa-github"></i> github.com/vidaurresilvia</p>
+                </div>
+                <a href="mailto:tuemail@gmail.com" class="btn">Envíame un mensaje</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Silvia Vidaurre. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
